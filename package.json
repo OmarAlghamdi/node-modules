@@ -1,0 +1,11 @@
+{
+  "name": "node-modules",
+  "version": "1.0.0",
+  "description": "demo http, fs, path, os & events modules",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "author": "Omar Alghamdi",
+  "license": "ISC"
+}
