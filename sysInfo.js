@@ -12,11 +12,11 @@ const OS_TYPES = {
     Desc: gets system information
     Params: n/a
     Returns: <Object>
-        arch:       <String> Computer Architecure
+        arch:       <String> Computer Architecture
         numCPU:     <Number> Number of CPU corse (Threads counted)
         freeMem:    <Number> Free Memory
         totalMem:   <Number> Total Memory
-        OS:         <String> Operating Systme name
+        OS:         <String> Operating System name
         OSVersion:  <String> Operating System version
         hostname:   <String> Hostname
         net:        <Object> Network Interface Card (NIC) details
@@ -36,7 +36,7 @@ const getSysInfo = () => {
 }
 
 /**
-    Desc: foramts the free/total memory to GB/MB instead of bytes
+    Desc: formats the free/total memory to GB/MB instead of bytes
     Params: <Number> memory size in bytes
     Returns: <String> size of memory
 */
@@ -87,7 +87,7 @@ const getNetInfo = () => {
 
 const sys = getSysInfo();
 
-// formating system info.
+// formatting system info.
 const info = `Node is running on ${sys.OS} version ${sys.OSVersion} on ${sys.arch} architecture.
 The system has ${sys.numCPU} CPUs with ${sys.freeMem} free memory out of ${sys.totalMem}.
 Hostname: ${sys.hostname}, IPv4: ${sys.net.cidr4}, IPv6: ${sys.net.cidr6} & MAC Address: ${sys.net.mac}`;
