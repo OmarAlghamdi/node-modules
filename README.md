@@ -27,6 +27,9 @@ The cluster also make create a new process in case one dies. To try that yoursel
 
 NOTE: running this script requires `loadtest` to be installed globally. run `npm install -g loadtest` if you do not already have it.
 
+### Streams
+`streams.js` is sample code that uses `stream.readable` & `stream.writeable` to process large dataset about 1 GB in size (not included in the repo). the process is simple (just replacing comas with semicolons). 
+
 ## Exercise
 ### promisify
 I did the exercise given during the July/2nd meeting (wrapping fs functions in promises)
