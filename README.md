@@ -20,7 +20,7 @@ Both the parent process `ipc` and the child process `child` send message to the 
 ### cluster
 `cluster.js` is a sample code that uses `cluster` and `os` modules to launch a simple cluster of http servers on port `3000`. Then number of the processes depends on the number of the CPUs in the system.
 
-The cluster also make create a new process in case one dies. To try that yourself send a request to `loaclhost:3000/kill`.
+The cluster also make create a new process in case one dies. To try that yourself send a request to `localhost:3000/kill`.
 
 ### child_process - spawn()
 `cluster-test.js` is a sample code that uses `child_process.spawn()` to launch the simple cluster (explained above) and [loadtest](https://www.npmjs.com/package/loadtest) to test the cluster with 500 requests.
@@ -28,7 +28,7 @@ The cluster also make create a new process in case one dies. To try that yoursel
 NOTE: running this script requires `loadtest` to be installed globally. run `npm install -g loadtest` if you do not already have it.
 
 ### Streams
-`streams.js` is sample code that uses `stream.readable` & `stream.writeable` to process large dataset about 1 GB in size (not included in the repo). the process is simple (just replacing comas with semicolons). 
+`streams.js` is sample code that uses `stream.readable` & `stream.writeable` to process large dataset about 1 GB in size (not included in the repo). the process is simple (just replacing comas with semicolons). ****
 
 ## Exercise
 ### promisify
